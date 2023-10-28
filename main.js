@@ -74,7 +74,7 @@ window.onload = function ()
                 gpa_value += get_credit(element) * get_points(element);
             }
         }
-        gpa_value = gpa_value * 1.00 / 20.00;
+        gpa_value = (gpa_value * 1.00) / 20.00;
         gpa_value = gpa_value.toFixed(2);
         gpa.innerText = (gpa_value).toString();
         console.log("clicked the button!");
@@ -104,9 +104,9 @@ window.onload = function ()
         if (marks >= 60) return 7;
         if (marks >= 55 && marks <= 59) return 6;
         if (marks >= 50 && marks <= 54) return 5;
-        if (marks >= 49 && marks <= 45) return 4;
-        if (marks >= 44 && marks <= 40) return 3;
-        if (marks < 40) return 0;
+        if (marks >= 45 && marks <= 49) return 4;
+        if (marks >= 40 && marks <= 44) return 3;
+        else return 0;
     }
 
 
