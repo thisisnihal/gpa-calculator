@@ -51,49 +51,28 @@ window.onload = function ()
 
 
 
-    const maths_p = document.getElementById("maths-p");
-    const maths_c = document.getElementById("maths-c");
-    const phy = document.getElementById("phy");
-    const chem = document.getElementById("chem");
-    const iot = document.getElementById("iot");
-    const ele = document.getElementById("ele");
-    const eln = document.getElementById("eln");
-    const caed = document.getElementById("caed");
-    const pop = document.getElementById("pop");
-
-    const pws = document.getElementById("pws");
-    const idt = document.getElementById("idt");
-    const eng = document.getElementById("eng");
-    const sfh = document.getElementById("sfh");
-    const kann = document.getElementById("kann");
-    const cip = document.getElementById("cip");
-
-
+    var input_elements = document.getElementsByTagName("input");
+    var p_input_elements = document.querySelector("#inp-p-cycle").getElementsByTagName("input");
+    var c_input_elements = document.querySelector("#inp-c-cycle").getElementsByTagName("input");
     calculate_btn.addEventListener("click", () =>
     {
         result.style.display = 'block';
         var gpa_value = 0;
         if (to_calc_p_cycle)
         {
-            gpa_value = get_credit(maths_p) * get_points(maths_p) +
-                get_credit(phy) * get_points(phy) +
-                get_credit(pop) * get_points(pop) +
-                get_credit(iot) * get_points(iot) +
-                get_credit(eln) * get_points(eln) +
-                get_credit(pws) * get_points(pws) +
-                get_credit(idt) * get_points(idt) +
-                get_credit(kann) * get_points(kann);
+            for (let i = 0; i < p_input_elements.length; i++)
+            {
+                const element = p_input_elements[i];
+                gpa_value += get_credit(element) * get_points(element);
+            }
         }
         else
         {
-            gpa_value = get_credit(maths_c) * get_points(maths_c) +
-                get_credit(chem) * get_points(chem) +
-                get_credit(python) * get_points(python) +
-                get_credit(caed) * get_points(caed) +
-                get_credit(ele) * get_points(ele) +
-                get_credit(eng) * get_points(eng) +
-                get_credit(sfh) * get_points(sfh) +
-                get_credit(cip) * get_points(cip);
+            for (let i = 0; i < c_input_elements.length; i++)
+            {
+                const element = c_input_elements[i];
+                gpa_value += get_credit(element) * get_points(element);
+            }
         }
         gpa_value = gpa_value * 1.00 / 20.00;
         gpa_value = gpa_value.toFixed(2);
@@ -104,12 +83,12 @@ window.onload = function ()
 
     reset.addEventListener("click", () =>
     {
-        var elements = document.getElementsByTagName("input");
-        for (var i = 0; i < elements.length; i++)
+
+        for (var i = 0; i < input_elements.length; i++)
         {
-            if (elements[i].type == "number")
+            if (input_elements[i].type == "number")
             {
-                elements[i].value = "";
+                input_elements[i].value = "";
             }
         }
     });
