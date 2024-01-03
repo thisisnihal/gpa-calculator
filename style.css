@@ -1,64 +1,115 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
-    background-color: rgb(19, 19, 19);
+    background-image: linear-gradient(to right bottom, #e55d7d, #e25d89, #de5e95, #d861a0, #d164ab)
 }
 
-label, h1, input, p{
-    color: aliceblue;
-
+label,
+h1,
+input,
+p {
+    color: #f0f8ff
 }
+
 input {
-    background-color: rgb(81, 81, 81);
     margin: 10px 5px;
     border-radius: 5px;
-}
-#inp-p-cycle > div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 30px;
+    width: 100px;
+    font-size: 5.5vw;
+    background-color: #ffffffe9;
+    color: #000
 }
 
-#inp-c-cycle > div{
+#inp-p-cycle>div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
+
+#inp-c-cycle>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 button {
-    margin: 5px 5px;
-    width: 100px;
-    height: 30px;
-    color: cornflowerblue;
+    margin: 5px;
+    width: 200px;
+    height: 40px;
+    color: #77a1ed;
     border-radius: 10px;
-    border: 3px solid rgb(119, 161, 237);
-}   
+    font-size: 20px;
+    font-weight: 600;
+    border: 3px solid #77a1ed
+}
+
 button:hover {
-    background-color: rgb(224, 225, 227);
+    background-color: #e0e1e3
+}
+
+button:active {
+    color: #fff;
+    background-color: #548efb;
+    border: 3px solid transparent
 }
 
 #inp-c-cycle {
     display: none;
-    margin-top: 0.5vh;
+    margin-top: .5vh
 }
+
 #inp-p-cycle {
     display: block;
-    margin-top: 0.5vh;
+    margin-top: .5vh
 }
 
 #result {
     display: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3c3c3c
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: #c36199;
+    text-align: center;
+    font-size: 20px
+}
+
+@media only screen and (max-width: 600px) {
+    .input-container {
+        width: 90%;
+        font-size: 5.5vw
+    }
+    
+    button {
+        width: 90vw;
+        height: 40px;
+        font-size: 5vw
+    }
+
+    #result {
+        display: none;
+        font-size: 6vw;
+    }
+}
