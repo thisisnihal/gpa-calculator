@@ -91,6 +91,7 @@ window.onload = function ()
                 input_elements[i].value = "";
             }
         }
+        result.style.display = "none";
     });
 
 
