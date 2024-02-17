@@ -1,132 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <script src="main.js" defer></script>
     <title>VTU SGPA Calculator</title>
-</head>
 
-<body>
+  </head>
 
-    <div class="container">
-        <div>
-            <h1>VTU GPA Calculator</h1>
+  <body>
+    <header id="header__section">
+      <nav>
+        <span><h3>VTU SGPA Calculator</h3></span>
+        <div class="navlinks">
+          <li><a href="#">About</a></li>
+          <li>
+            <a
+              href="https://github.com/thisisnihal/gpa-calculator"
+              target="_blank"
+              >Contribute <i class="bx bxl-github"></i
+            ></a>
+          </li>
         </div>
-        <div style="margin: 0.2vh 0px; font-size: max(2.6vw, 21px)">
-            <label for="cycleOptions">Choose Cycle: </label>
-            <select id="cycleOptions" name="cycleOptions">
-                <option value="phyCycle" selected>Physics</option>
-                <option value="chemCycle">Chemistry</option>
-            </select>
-        </div>
-        <div class="input-container" id="inp-p-cycle">
+      </nav>
+    </header>
+    <section class="main__section" id="main__section">
+      <div class="selector__container">
+        <label for="branch">Branch: </label>
+        <select id="branch" name="Branch" autocomplete="off">
+          <!-- <option value="csds" selected>CSE(DS)</option>
+          <option value="ece">ECE</option> -->
+        </select>
+        <label for="semester">Semester: </label>
+        <select id="semester" name="Semester">
+          <option value="1" selected>1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+          <option value="5">5th</option>
+          <option value="6">6th</option>
+          <option value="7">7th</option>
+          <option value="8">8th</option>
+        </select>
+      </div>
 
-            <div>
-                <label for="maths-p">Maths</label>
-                <input type="number" id="maths-p" min="0" max="100" step="1">
-            </div>
+      <form class="form__main" id="form__main">
+        <!-- <div class="field">
+          <label for="maths">Maths</label>  
+          <input type="text" id="firstName1" />
+        </div> -->
 
-            <div>
-                <label for="phy">Physics</label>
-                <input type="number" id="phy" min="0" max="100" step="1">
-            </div>
-
-
-            <div>
-                <label for="pop">PoP</label>
-                <input type="number" id="pop" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="pws">English</label>
-                <input type="number" id="pws" min="0" max="100" step="1">
-            </div>
-
-
-            <div>
-                <label for="kann">Kannada</label>
-                <input type="number" id="kann" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="idt">IDT</label>
-                <input type="number" id="idt" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="eln">Electronics</label>
-                <input type="number" id="eln" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="iot">IoT</label>
-                <input type="number" id="iot" min="0" max="100" step="1">
-            </div>
-
-        </div>
-
-
-        <div class="input-container" id="inp-c-cycle">
-
-            <div>
-                <label for="maths">Maths</label>
-                <input type="number" id="maths-c" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="chem">Chemistry</label>
-                <input type="number" id="chem" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="caed">CAED</label>
-                <input type="number" id="caed" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="eng">English</label>
-                <input type="number" id="eng" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="cip">CIP</label>
-                <input type="number" id="cip" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="sfh">SFH</label>
-                <input type="number" id="sfh" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="Python">Python</label>
-                <input type="number" id="python" min="0" max="100" step="1">
-            </div>
-
-            <div>
-                <label for="ele">Electrcial</label>
-                <input type="number" id="ele" min="0" max="100" step="1">
-            </div>
-
-
-
-
-
-        </div>
-
-        <button id="calc-btn">Calculate</button>
-        <button id="reset-btn">Reset</button>
-        <div id="result">
-            Congrats! You scored <span id="gpa" style="color: rgb(82, 109, 242);">X</span> GPA
-        </div>
-    </div>
-</body>
-
-<!-- <footer>
-    <p>contribute to this 💙 <a href="https://github.com/thisisnihal/gpa-calculator" target="_blank" rel="noopener noreferrer" style="color: rgb(52, 193, 240);">repo</a><br>connect with me <a href="https://twitter.com/_thisisNihal" target="_blank" rel="noopener noreferrer" style="color: #77a1ed;"> @_thisisNihal</a></p>
-</footer> -->
-
+        <!-- <input
+          type="button"
+          value="Calculate"
+          id="submit_btn"
+          class="form_btn submit_btn"
+        />
+        <input type="reset" value="Reset" class="form_btn reset_btn" /> -->
+      </form>
+    </section>
+    <!-- <section class="about__section" id="about">
+      <div>Hi</div>
+    </section> -->
+    <section class="result__section" id="result__section">
+      <div>
+        <h1> <span id="result__wish">Congrats 🎉</span> You Scored <span id="result__span">0</span> SGPA</h1>
+      </div>
+    </section>
+  </body>
 </html>
