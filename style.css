@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", Geneva, Tahoma, sans-serif;
-  font-weight: 500;
 }
 
 html,
@@ -68,6 +67,7 @@ nav span {
   align-items: center;
   justify-content: center;
   background-color: bisque;
+  
 }
 
 .form__main {
@@ -160,7 +160,9 @@ nav span {
   .form__main {
       width: 25rem;
       height: calc(100vh - 120px);
-      padding: 1rem 1rem;
+      padding: 1rem 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
       gap: 1.1rem;
   }
   .form_btn{
@@ -175,4 +177,8 @@ nav span {
     padding-right: 1.5rem;
     
   }
+}
+
+.gif__section{
+  width: 100%;
 }
