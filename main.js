@@ -96,6 +96,12 @@ function getElement(tag, innerHtml = "", attr) {
   }
   return elem;
 }
+
+const aboutSection = document.getElementById("about__section");
+const aboutCloseBtn = document.getElementById("close__btn");
+const aboutHref = document.getElementById("about__href");
+const mainSection = document.getElementById("main__section");
+
 const branchOptions = document.getElementById("branch");
 const semOptions = document.getElementById("semester");
 Object.keys(entity).forEach((key) => {
@@ -269,3 +275,34 @@ const rePopulateMainForm = () => {
   deleteAllChild(mainForm);
   populateMainForm(currBranchName, currSem);
 };
+
+;
+
+
+aboutHref.addEventListener("click", ()=>{
+  if (aboutSection.style.display === 'none') {
+    aboutSection.style.display = 'flex';
+    mainForm.style.filter = 'blur(20px)';
+  } else {
+    aboutSection.style.display = 'none';
+    mainForm.style.filter = 'blur(0px)';
+  }
+});
+aboutCloseBtn.addEventListener("click", ()=>{
+  if(aboutSection.style.display !== 'none') {
+    aboutSection.style.display = 'none';
+    mainForm.style.filter = 'blur(0px)';
+  }
+});
+
+
+const shareData = {
+  title: "VTU SGPA Calculator",
+  text: "Calulate your grade points with ease",
+  url: "https://thisisnihal.github.io/gpa-calculator/",
+};
+const shareHref = document.getElementById("share__href");
+shareHref.addEventListener("click", async ()=> {
+  await navigator.share(shareData);
+  console.log("Link is shared successfully");
+})
