@@ -71,7 +71,7 @@ const entity = {
       NA: ["Network Analysis", 3],
       ADSD: ["Analog and Digital Systems Design Lab", 1],
       MATLAB: ["MATLAB Programming", 1],
-      SC_edit: ["Sensors and Instrumentation", 3],
+      COA: ["Computer Organization and Architecture", 3],
       SCR: ["Social Connect and Responsibility", 1],
       
     },
@@ -185,6 +185,7 @@ const calculateResult = () => {
 
 const getInputField = (sub, subject) => {
   const div = getElement("div", "", ["class", "field"]);
+  sub += `  <i class='bx bxs-info-circle'></i>`;
   const label = getElement("label", sub, ["for", sub, "title", subject]);
   const input = getElement("input", sub, [
     "type",
@@ -301,8 +302,33 @@ const shareData = {
   text: "Calulate your grade points with ease",
   url: "https://thisisnihal.github.io/gpa-calculator/",
 };
-const shareHref = document.getElementById("share__href");
-shareHref.addEventListener("click", async ()=> {
-  await navigator.share(shareData);
-  console.log("Link is shared successfully");
-})
+// const shareHref = document.querySelector(".share__href");
+// shareHref.addEventListener("click", async ()=> {
+//   await navigator.share(shareData);
+//   console.log("Link is shared successfully");
+// })
+function shareHref() {
+  if (navigator.share && navigator.canShare(shareData)) {
+    navigator.share(shareData);
+    console.log("Data shared successfully");
+ } else {
+  console.log("Error:: Data cannot be shared");
+ }
+}
+
+
+const infoIcons = document.querySelectorAll('i./*  */bx.bxs-info-circle');
+
+infoIcons.forEach(function(icon) {
+  icon.addEventListener('click', function() {
+      var parentLabel = icon.closest('label');
+      if (parentLabel) {
+          let parentTitle = parentLabel.getAttribute('title');
+          if (parentTitle) {
+            const outputText = parentLabel.innerText+ ": " + parentTitle;
+
+            alert(outputText);
+          }
+      }
+  });
+});
