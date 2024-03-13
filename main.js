@@ -185,7 +185,6 @@ const calculateResult = () => {
 
 const getInputField = (sub, subject) => {
   const div = getElement("div", "", ["class", "field"]);
-  sub += `  <i class='bx bxs-info-circle'></i>`;
   const label = getElement("label", sub, ["for", sub, "title", subject]);
   const input = getElement("input", sub, [
     "type",
@@ -302,14 +301,6 @@ const shareData = {
   text: "Calulate your grade points with ease",
   url: "https://thisisnihal.github.io/gpa-calculator/",
 };
-<<<<<<< HEAD
-=======
-// const shareHref = document.querySelector(".share__href");
-// shareHref.addEventListener("click", async ()=> {
-//   await navigator.share(shareData);
-//   console.log("Link is shared successfully");
-// })
->>>>>>> refs/remotes/origin/main
 function shareHref() {
   if (navigator.share && navigator.canShare(shareData)) {
     navigator.share(shareData);
@@ -317,25 +308,4 @@ function shareHref() {
  } else {
   console.log("Error:: Data cannot be shared");
  }
-<<<<<<< HEAD
 }
-=======
-}
-
-
-const infoIcons = document.querySelectorAll('i./*  */bx.bxs-info-circle');
-
-infoIcons.forEach(function(icon) {
-  icon.addEventListener('click', function() {
-      var parentLabel = icon.closest('label');
-      if (parentLabel) {
-          let parentTitle = parentLabel.getAttribute('title');
-          if (parentTitle) {
-            const outputText = parentLabel.innerText+ ": " + parentTitle;
-
-            alert(outputText);
-          }
-      }
-  });
-});
->>>>>>> refs/remotes/origin/main
