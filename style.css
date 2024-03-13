@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 :root{
-
+  --primary1: bisque;
+  
 }
 * {
   margin: 0;
@@ -41,7 +42,11 @@ nav {
   padding-right: 3rem;
   width: 100%;
   height: 60px;
+<<<<<<< HEAD
   background-color: #e7e6e6;
+=======
+  background-color: #f2f2f2;
+>>>>>>> refs/remotes/origin/main
   backdrop-filter: blur(40px);
   position: fixed;
   top: 0;
@@ -66,18 +71,22 @@ nav span {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: bisque;
+  background-color: var(--primary1);
   
 }
 
 .form__main {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: start  ;
   align-items: start;
   width: 25rem;
   height: calc(100vh - 120px);
+<<<<<<< HEAD
   background-color: bisque;
+=======
+  background-color: var(--primary1);
+>>>>>>> refs/remotes/origin/main
   border-radius: 5px;
   padding: 1rem 0.5rem;
   gap: 1.1rem;
