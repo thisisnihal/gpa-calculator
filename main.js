@@ -301,8 +301,11 @@ const shareData = {
   text: "Calulate your grade points with ease",
   url: "https://thisisnihal.github.io/gpa-calculator/",
 };
-const shareHref = document.getElementById("share__href");
-shareHref.addEventListener("click", async ()=> {
-  await navigator.share(shareData);
-  console.log("Link is shared successfully");
-})
+function shareHref() {
+  if (navigator.share && navigator.canShare(shareData)) {
+    navigator.share(shareData);
+    console.log("Data shared successfully");
+ } else {
+  console.log("Error:: Data cannot be shared");
+ }
+}
