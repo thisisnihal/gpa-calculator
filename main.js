@@ -301,6 +301,7 @@ const shareData = {
   text: "Calulate your grade points with ease",
   url: "https://thisisnihal.github.io/gpa-calculator/",
 };
+
 function shareHref() {
   if (navigator.share && navigator.canShare(shareData)) {
     navigator.share(shareData);
