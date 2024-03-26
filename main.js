@@ -59,6 +59,58 @@ const entity = {
       Electronics: ["INTRODUCTION TO ELECTRONICS COMMUNICATIONG", 3],
       IOT: [" INTRODUCTION TO INTERNET OF THINGS", 3],
     },
+    {
+      Maths: ["Mathematics for Computer Science", 4],
+      DDCO: ["Digital Design & Computer Organization", 4],
+      OS: ["Operating System", 4],
+      DSA: ["DATA STRUCTURES AND APPLICATIONS", 3],
+      Java: ["Object Oriented Programming with Java", 3],
+      DSA_Lab: ["DATA STRUCTURES AND APPLICATIONS LAB", 1],
+      DAE: ["Data Analytics with Excel", 1],
+      SCR: ["Social Connect and Responsibility", 1],
+    },
+    {
+      ADA : ["Analysis & Design of Algorithms",3],
+      Adv_Java : ["Advanced Java",4],
+      DBMS : ["Database Management Systems",4],
+      ADA_Lab : ["Analysis & Design of Algorithms Lab",1],
+      ESC : ["ESC/ETC/PLC",3],
+      AEC : ["Ability Enhancement Course/Skill Enhancement Course- IV",1],
+      Biology : ["Biology For Computer Engineers",3],
+      Human_Values : ["Universal human values course ",1]
+    },
+    {
+      Software_Eng : ["Software Engineering & Project Management",3],
+      CN : ["Computer Networks",4],
+      Computations: ["Theory of computations ",4],
+      DV_Lab : ["Data Visualization Lab",1],
+      Pro_Elective : ["Professional Elective Course",3],
+      Mini_Project : ["Mini Project",2],
+      ResearchAndIPR : ["Research Methodology and IPR",3],
+      EVS : ["Environmental Studies",2],    
+    },
+    {
+      Full_Stack : ["Full Stack Development",4],
+      ML : ["Machine Learning",4],
+      Pro_Elective: ["Professional Elective Course ",3],
+      Open_Elective : ["Open Elective Course",3],
+      Project_P1 : ["Project Phase I",2],
+      ML_Lab : ["Machine Learning lab",1],
+      AEC : ["Ability Enhancement Course/Skill Development Course V",1],    
+    },
+    {
+      Big_Data : ["Big Data Analytics",4],
+      Parallel_Computing : ["Parallel Computing",4],
+      Pro_Elective: ["Professional Elective Course ",3],
+      Open_Elective : ["Open Elective Course",3],
+      Project_P2 : ["Project Phase II",6],
+      Info_NetworkSecurity : ["Information & Network Security",4],   
+    },
+    {
+      Pro_Elective_NPTEL : ["Professional Elective (Online Courses) Only through NPTEL ",3],
+      Open_Elective_NPTEL : ["Open Elective (Online Courses) Only through NPTEL",3],
+      Internship: ["Internship",10]
+    }
   ],
   cse: [{}],
   ece: [
