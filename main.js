@@ -140,7 +140,7 @@ const entity = {
       DSA: ["DATA STRUCTURES AND APPLICATIONS", 3],
       Java: ["Object Oriented Programming with Java", 3],
       DSA_Lab: ["DATA STRUCTURES AND APPLICATIONS LAB", 1],
-      DV: ["Data Visualization with Python", 1],
+      DV_With_Python: ["Data Visualization with Python", 1],
       SCR: ["Social Connect and Responsibility", 1],
     },
     {
@@ -148,7 +148,7 @@ const entity = {
       MC : ["Microcontroller",4],
       DBMS : ["Database Management Systems",4],
       ADA_Lab : ["Analysis & Design of Algorithms Lab",1],
-      GT : ["Graph Theory",3],
+      Graph_Theory : ["Graph Theory",3],
       Latex : ["Technical writing using LATEX (Lab) ",1],
       Biology : ["Biology For Computer Engineers",2],
       Human_Values : ["Universal human values course ",1]
@@ -157,7 +157,7 @@ const entity = {
       Software_Eng : ["Software Engineering & Project Management",3],
       CN : ["Computer Networks",4],
       Computations: ["Theory of computations ",4],
-      Web_Tech : ["Web Technology Lab ",1],
+      Web_Tech_Lab: ["Web Technology Lab ",1],
       AI : ["Artificial Intelligence",3],
       Mini_Project : ["Mini Project",2],
       ResearchAndIPR : ["Research Methodology and IPR",3],
@@ -182,7 +182,7 @@ const entity = {
   aiml: [{}],
   aids: [{}],
 };
-entity.cse = entity.csds;
+entity.cse = entity.cse;
 entity.aiml = entity.csds;
 entity.aids = entity.csds;
 entity.ece[0] = entity.csds[0];
