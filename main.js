@@ -127,6 +127,15 @@ const entity = {
       SCR: ["Social Connect and Responsibility", 1],
       
     },
+    {EM :["Electromagnetics Theory",3],
+      PCS :["Principles of Communication Systems ",4],
+      CS : ["Control Systems",4], 
+      CommunicationLab : ["Communication Lab  ",1],
+      Microcontrollers:["Microcontrollers",3],
+      Micro_Lab:["Microcontrollers Lab",1],
+      Biology:["Biology For Engineers",3],
+      UHV:["Universal human values course",1]
+     }
   ],
   aiml: [{}],
   aids: [{}],
