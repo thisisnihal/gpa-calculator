@@ -13,7 +13,8 @@ const elements = {
   resultWish: document.getElementById("result__wish"),
   resultText: document.getElementById("result__gpa"),
   resultSection: document.getElementById("result__section"),
-  navlinks: document.querySelector(".navlinks")
+  navlinks: document.querySelector(".navlinks"),
+  studentName: document.getElementById('studentName')
 };
 
 function createElement(tag, innerHtml = "", attributes = {}) {
@@ -206,5 +207,30 @@ function shareHref() {
     console.log("Error:: Data cannot be shared");
   }
 }
+
+
+function takeScreenShot() {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = 'lightblue';
+  ctx.fillRect(0, 0, 500, 200);
+
+  ctx.fillStyle = 'black';
+  ctx.font = '20px Arial';
+
+  ctx.fillText(`VTU Semester - ${elements.semOptions.value}`, 40, 50);
+  ctx.fillText(`${studentName.value} Scored ${elements.resultText.innerHTML} SGPA`, 40, 80);
+
+  const imgData = canvas.toDataURL('image/png');
+  const link = document.createElement('a');
+  link.href = imgData;
+  link.download = 'screenshot.png';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+
 
 document.addEventListener("DOMContentLoaded", loadJSON);
