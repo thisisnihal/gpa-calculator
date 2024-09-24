@@ -1,74 +1,567 @@
 {
-    "2022":{
-        "csds":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303","BCS304" ,"BCSL305","BXX306x","BSCK307","BXX358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BCS402" ,"BCS403","BCSL404","BXX405x","BDS456x","BBOC407","BUHK408","BNSK459","BPEK459","BYOK459"],
-            "5":["BCD501" ,"BCD502" ,"BCD503","BCDL504","BCD515x","BCD586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BCD601" ,"BCD602" ,"BCD603","BCD613x","BCD654x","BCD685" ,"BCDL606","BCD657x","BNSK658","BPEK658","BYOK658"],
-            "7":["BCD701" ,"BCD702" ,"BCD703","BCD714x","BCD755x","BCD786"                                                   ],
-            "8":["BCD801x","BCD802x","BCD803"                                                                                ]
-        },
-        "ece":{
-            "1": ["BMATE101", "BPHYE102", "BEEE103", "BBEE103", "BESCK104x", "BETCK105x/BPLCK105x", "BENGK106", "BPWSK106", "BKSKK107/BKBKK107", "BICOK107", "BIDTK158", "BSFHK158"],
-            "2": ["BMATE201", "BCHEE202", "BCEDK203", "BESCK204x", "BPLCK205x/BETCK205x", "BPWKS206", "BENGK206", "BICOK207", "BKSKK207/BKBKK207", "BSFHK258/BIDTK258"],
-            "3":["BMATEC301","BEC302","BEC303","BEC304" ,"BECL305","BXX306x","BSCK307","BXX358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BEC401"   ,"BEC402","BEC403","BECL404","BXX405x","BXX456x","BBOK407","BUHK408","BNSK459","BPEK459","BYOK459"],
-            "5":[                                                                                                             ],
-            "6":[                                                                                                             ],
-            "7":[                                                                                                             ],
-            "8":[                                                                                                             ]
-        },
-        "cse":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303" ,"BCS304" ,"BCSL305","BCS306x","BSCK307","BCS358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BCS402" ,"BCS403" ,"BCSL404","BCS405x","BBOC407","BUHK408","BNSK459","BPEK459","BYOK459"          ],
-            "5":["BCS501" ,"BCS502" ,"BCS503" ,"BCSL504","BCS515x","BCS586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BCS601" ,"BCS602" ,"BCS613x","BCS654x","BCS685" ,"BCSL606","BCS657x","BNSK658","BPEK658","BYOK658"          ],
-            "7":["BCS701" ,"BCS702" ,"BCS703" ,"BCS714x","BCS755x","BCS786"                                                   ],
-            "8":["BCS801x","BCS802x","BCS803"                                                                                 ]
-        },
-        "ise":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303","BCS304" ,"BCSL305","BCS306x","BSCK307","BCS358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BIS402" ,"BCS403","BCSL404","BCS405x","BBOC407","BDS456x","BUHK408","BNSK459","BPEK459","BYOK459"],
-            "5":["BIS501" ,"BIS502" ,"BIS503","BISL504","BIS515x","BIS586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BIS601" ,"BIS602" ,"BIS603","BIS614x","BIS654x","BIS685"                                                   ],
-            "7":["BIS701" ,"BIS702" ,"BIS703","BIS714x","BIS755x","BIS786"                                                   ],
-            "8":["BIS801x","BIS802x","BIS803"                                                                                ]
-        },
-        "aiml":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303" ,"BCS304" ,"BCSL305","BCS306x","BSCK307","BCS358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BAD402" ,"BCS403" ,"BCSL404","BCS405x","BBOC407","BUHK408","BNSK459","BPEK459","BYOK459"          ],
-            "5":["BAI501" ,"BAI502" ,"BAI503" ,"BAIL504","BAI515x","BAI586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BAI601" ,"BAI602" ,"BAI613x","BAI654x","BAI685" ,"BAIL606","BAI657x","BNSK658","BPEK658","BYOK658"          ],
-            "7":["BAI701" ,"BAI702" ,"BAI703" ,"BAI714x","BAI755x","BAI786"                                                   ],
-            "8":["BAI801x","BAI802x","BAI803"                                                                                 ]
-        },
-        "aids":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303","BCS304" ,"BCSL305","BCS306x","BSCK307","BCS358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BAD402" ,"BCS403","BCSL404","BCS405x","BBOC407","BDS456x","BUHK408","BNSK459","BPEK459","BYOK459"],
-            "5":["BAD501" ,"BAD502" ,"BAD503","BADL504","BAD515x","BAD586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BAD601" ,"BAD602" ,"BAD603","BAD613x","BAD654x","BAD685" ,"BADL606","BAD657x","BNSK658","BPEK658","BYOK658"],
-            "7":["BAD701" ,"BAD702" ,"BAD703","BAD714x","BAD755x","BAD786"                                                   ],
-            "8":["BAD801x","BAD802x","BAD803"                                                                                ]
-        },
-        "csaiml":{
-            "1": ["BMATS101", "BPHYS102", "BPOPS103", ["BETCK105x/BPLCK105x"], "BENGK106/BPWSK106", "BKSKK107/BKBKK107/BICOK107", "BIDTK158/BSFHK158"],
-            "2": ["BMATS201", "BCHES202", "BCEDK203", ["BESCK204x"], ["BETCK205x/BPLCK205x"], "BENGK206/BPWSK206", "BKSKK207/BKBKK207/BICOK207", "BIDTK258/BSFHK258"],
-            "3":["BCS301" ,"BCS302" ,"BCS303" ,"BCS304" ,"BCSL305","BCS306x","BSCK307","BCS358x","BNSK359","BPEK359","BYOK359"],
-            "4":["BCS401" ,"BAD402" ,"BCS403" ,"BCSL404","BCS405x","BBOC407","BUHK408","BNSK459","BPEK459","BYOK459"          ],
-            "5":["BCI501" ,"BCI502" ,"BCI503" ,"BCIL504","BCI515x","BCI586" ,"BRMK557","BESK508","BNSK559","BPEK559","BYOK559"],
-            "6":["BCI601" ,"BCI602" ,"BCI613x","BCI654x","BCI685" ,"BCIL606","BCI657x","BNSK658","BPEK658","BYOK658"          ],
-            "7":["BCI701" ,"BCI702" ,"BCI703" ,"BCI714x","BCI755x","BCI786"                                                   ],
-            "8":["BCI801x","BCI802x","BCI803"                                                                                 ]
-        }
+    "2022": {
+      "csds": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BXX306x",
+          "BSCK307",
+          "BXX358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BCS402",
+          "BCS403",
+          "BCSL404",
+          "BXX405x",
+          "BDS456x",
+          "BBOC407",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BCD501",
+          "BCD502",
+          "BCD503",
+          "BCDL504",
+          "BCD515x",
+          "BCD586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BCD601",
+          "BCD602",
+          "BCD603",
+          "BCD613x",
+          "BCD654x",
+          "BCD685",
+          "BCDL606",
+          "BCD657x",
+          "BNSK658",
+          "BPEK658",
+          "BYOK658"
+        ],
+        "7": [
+          "BCD701",
+          "BCD702",
+          "BCD703",
+          "BCD714x",
+          "BCD755x",
+          "BCD786"
+        ],
+        "8": [
+          "BCD801x",
+          "BCD802x",
+          "BCD803"
+        ]
+      },
+      "ece": {
+        "1": [
+          "BMATE101",
+          "BPHYE102",
+          "BEEE103",
+          "BBEE103",
+          "BESCK104x",
+          "BETCK105x/BPLCK105x",
+          "BENGK106",
+          "BPWSK106",
+          "BKSKK107/BKBKK107",
+          "BICOK107",
+          "BIDTK158",
+          "BSFHK158"
+        ],
+        "2": [
+          "BMATE201",
+          "BCHEE202",
+          "BCEDK203",
+          "BESCK204x",
+          "BPLCK205x/BETCK205x",
+          "BPWKS206",
+          "BENGK206",
+          "BICOK207",
+          "BKSKK207/BKBKK207",
+          "BSFHK258/BIDTK258"
+        ],
+        "3": [
+          "BMATEC301",
+          "BEC302",
+          "BEC303",
+          "BEC304",
+          "BECL305",
+          "BXX306x",
+          "BSCK307",
+          "BXX358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BEC401",
+          "BEC402",
+          "BEC403",
+          "BECL404",
+          "BXX405x",
+          "BXX456x",
+          "BBOK407",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": []
+      },
+      "cse": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BCS306x",
+          "BSCK307",
+          "BCS358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BCS402",
+          "BCS403",
+          "BCSL404",
+          "BCS405x",
+          "BBOC407",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BCS501",
+          "BCS502",
+          "BCS503",
+          "BCSL504",
+          "BCS515x",
+          "BCS586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BCS601",
+          "BCS602",
+          "BCS613x",
+          "BCS654x",
+          "BCS685",
+          "BCSL606",
+          "BCS657x",
+          "BNSK658",
+          "BPEK658",
+          "BYOK658"
+        ],
+        "7": [
+          "BCS701",
+          "BCS702",
+          "BCS703",
+          "BCS714x",
+          "BCS755x",
+          "BCS786"
+        ],
+        "8": [
+          "BCS801x",
+          "BCS802x",
+          "BCS803"
+        ]
+      },
+      "ise": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BCS306x",
+          "BSCK307",
+          "BCS358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BIS402",
+          "BCS403",
+          "BCSL404",
+          "BCS405x",
+          "BBOC407",
+          "BDS456x",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BIS501",
+          "BIS502",
+          "BIS503",
+          "BISL504",
+          "BIS515x",
+          "BIS586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BIS601",
+          "BIS602",
+          "BIS603",
+          "BIS614x",
+          "BIS654x",
+          "BIS685"
+        ],
+        "7": [
+          "BIS701",
+          "BIS702",
+          "BIS703",
+          "BIS714x",
+          "BIS755x",
+          "BIS786"
+        ],
+        "8": [
+          "BIS801x",
+          "BIS802x",
+          "BIS803"
+        ]
+      },
+      "aiml": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BCS306x",
+          "BSCK307",
+          "BCS358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BAD402",
+          "BCS403",
+          "BCSL404",
+          "BCS405x",
+          "BBOC407",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BAI501",
+          "BAI502",
+          "BAI503",
+          "BAIL504",
+          "BAI515x",
+          "BAI586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BAI601",
+          "BAI602",
+          "BAI613x",
+          "BAI654x",
+          "BAI685",
+          "BAIL606",
+          "BAI657x",
+          "BNSK658",
+          "BPEK658",
+          "BYOK658"
+        ],
+        "7": [
+          "BAI701",
+          "BAI702",
+          "BAI703",
+          "BAI714x",
+          "BAI755x",
+          "BAI786"
+        ],
+        "8": [
+          "BAI801x",
+          "BAI802x",
+          "BAI803"
+        ]
+      },
+      "aids": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BCS306x",
+          "BSCK307",
+          "BCS358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BAD402",
+          "BCS403",
+          "BCSL404",
+          "BCS405x",
+          "BBOC407",
+          "BDS456x",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BAD501",
+          "BAD502",
+          "BAD503",
+          "BADL504",
+          "BAD515x",
+          "BAD586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BAD601",
+          "BAD602",
+          "BAD603",
+          "BAD613x",
+          "BAD654x",
+          "BAD685",
+          "BADL606",
+          "BAD657x",
+          "BNSK658",
+          "BPEK658",
+          "BYOK658"
+        ],
+        "7": [
+          "BAD701",
+          "BAD702",
+          "BAD703",
+          "BAD714x",
+          "BAD755x",
+          "BAD786"
+        ],
+        "8": [
+          "BAD801x",
+          "BAD802x",
+          "BAD803"
+        ]
+      },
+      "csaiml": {
+        "1": [
+          "BMATS101",
+          "BPHYS102",
+          "BPOPS103",
+          "BETCK105x/BPLCK105x",
+          "BENGK106/BPWSK106",
+          "BKSKK107/BKBKK107/BICOK107",
+          "BIDTK158/BSFHK158"
+        ],
+        "2": [
+          "BMATS201",
+          "BCHES202",
+          "BCEDK203",
+          "BESCK204x",
+          "BETCK205x/BPLCK205x",
+          "BENGK206/BPWSK206",
+          "BKSKK207/BKBKK207/BICOK207",
+          "BIDTK258/BSFHK258"
+        ],
+        "3": [
+          "BCS301",
+          "BCS302",
+          "BCS303",
+          "BCS304",
+          "BCSL305",
+          "BCS306x",
+          "BSCK307",
+          "BCS358x",
+          "BNSK359",
+          "BPEK359",
+          "BYOK359"
+        ],
+        "4": [
+          "BCS401",
+          "BAD402",
+          "BCS403",
+          "BCSL404",
+          "BCS405x",
+          "BBOC407",
+          "BUHK408",
+          "BNSK459",
+          "BPEK459",
+          "BYOK459"
+        ],
+        "5": [
+          "BCI501",
+          "BCI502",
+          "BCI503",
+          "BCIL504",
+          "BCI515x",
+          "BCI586",
+          "BRMK557",
+          "BESK508",
+          "BNSK559",
+          "BPEK559",
+          "BYOK559"
+        ],
+        "6": [
+          "BCI601",
+          "BCI602",
+          "BCI613x",
+          "BCI654x",
+          "BCI685",
+          "BCIL606",
+          "BCI657x",
+          "BNSK658",
+          "BPEK658",
+          "BYOK658"
+        ],
+        "7": [
+          "BCI701",
+          "BCI702",
+          "BCI703",
+          "BCI714x",
+          "BCI755x",
+          "BCI786"
+        ],
+        "8": [
+          "BCI801x",
+          "BCI802x",
+          "BCI803"
+        ]
+      }
     }
-}
+  }
