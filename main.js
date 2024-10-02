@@ -52,19 +52,20 @@ function calculateResult() {
     const credit = Number(subjectsData[subCode][1]);
     totalPoints += getPoints(marks) * credit;
     totalCredits += credit;
+    console.log(`${subCode} ${getPoints(marks)}x${credit} = ${getPoints(marks) * credit}`);
   });
-
+  console.log("final result: ", (totalPoints / totalCredits).toFixed(2));
   return totalCredits > 0 ? (totalPoints / totalCredits).toFixed(2) : "0.00";
 }
 
-function getInputField(subjectCode, subjectName) {
+function getInputField(subjectCode, subjectName, credits) {
   return createElement("div", "", { class: "field" }).appendChild(
-    createElement("label", subjectName, { for: subjectCode, title: subjectName })
+    createElement("label", `${subjectName}` , { for: subjectCode, title: subjectName })
   ).parentNode.appendChild(
     createElement("input", "", {
       type: "number",
       id: subjectCode,
-      placeholder: subjectCode,
+      placeholder: `${subjectCode}    credits: ${credits}`,
       min: "0",
       max: "100"
     })
@@ -84,7 +85,7 @@ function populateMainForm() {
   deleteAllChild(elements.mainForm);
 
   semData.forEach(subCode => {
-    elements.mainForm.appendChild(getInputField(subCode, subjectsData[subCode][0]));
+    elements.mainForm.appendChild(getInputField(subCode, subjectsData[subCode][0], subjectsData[subCode][1]));
   });
 
   appendFormButtons();
