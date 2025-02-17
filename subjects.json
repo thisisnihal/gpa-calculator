@@ -87,7 +87,7 @@
     "BCD515x": ["Professional Elective Course", 3],
     "BCD586": ["Mini Project", 2],
     "BRMK557": ["Research Methodology and IPR", 3],
-    "BESK508": ["Environmental Studies", 1],
+    "BESK508": ["Environmental Studies", 2],
     "BNSK559": ["National Service Scheme (NSS)", 0],
     "BPEK559": ["Physical Education (PE) (Sports and Athletics)", 0],
     "BYOK559": ["Yoga", 0],
@@ -221,7 +221,7 @@
 "BCI803": ["Internship (Industry/Research)", 10],
 
 
-"BCS501": ["Software Engineering & Project Management", 3],
+"BCS501": ["Software Engineering & Project Management", 4],
 "BCS502": ["Computer Networks", 4],
 "BCS503": ["Theory of Computation", 4],
 "BCSL504": ["Web Technology Lab", 1],
@@ -249,14 +249,14 @@
 
 
 
-"BETCK105x/BPLCK105x": ["Emerging Technology Course-I/Programming Language Course-I", 3],
-"BENGK106/BPWSK106": ["Communicative English/Professional Writing Skills in English", 1],
-"BKSKK107/BKBKK107/BICOK107": ["Samskrutika Kannada/Balake Kannada/Indian Constitution", 1],
+"BETCK105x/BPLCK105x": ["Programming Language Course-I", 3],
+"BENGK106/BPWSK106": ["English", 1],
+"BKSKK107/BKBKK107/BICOK107": ["Kannada/Indian Constitution", 1],
 "BIDTK158/BSFHK158": ["Innovation and Design Thinking/Scientific Foundations of Health", 1],
 
-"BETCK205x/BPLCK205x": ["Emerging Technology Course-II/Programming Language Course-II", 3],
-"BENGK206/BPWSK206": ["Communicative English/Professional Writing Skills in English", 1],
-"BKSKK207/BKBKK207/BICOK207": ["Samskrutika Kannada/Balake Kannada/Indian Constitution", 1],
+"BETCK205x/BPLCK205x": ["Programming Language Course-II", 3],
+"BENGK206/BPWSK206": ["English", 1],
+"BKSKK207/BKBKK207/BICOK207": ["Kannada/Indian Constitution", 1],
 "BIDTK258/BSFHK258": ["Innovation and Design Thinking/Scientific Foundations of Health", 1],
 "BKSKK107/BKBKK107": ["Samskrutika Kannada/Balake Kannada", 1],
 
@@ -264,12 +264,48 @@
 
 "BCHEE202": ["Chemistry for EES", 4],
 
-"BPLCK205x/BETCK205x": ["Programming Language Course-II/Emerging Technology Course-II", 3],
+"BPLCK205x/BETCK205x": ["Programming Language Course-II", 3],
 "BPWKS206": ["Professional Writing Skills in English", 1],
 
 "BKSKK207/BKBKK207": ["Samskrutika Kannada/Balake Kannada", 1],
 
-"BSFHK258/BIDTK258": ["Scientific Foundations of Health/Innovation and Design Thinking", 1]
+"BSFHK258/BIDTK258": ["Scientific Foundations of Health/Innovation and Design Thinking", 1],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"BXX515x": ["Professional Elective Course", 3],
+"BCS508": ["Environmental Studies and E-waste Management", 1],
+
+"BEC501": ["Technological Innovation and Management Entrepreneurship", 3],
+"BEC502": ["Digital Signal Processing", 4],
+"BEC503": ["Digital Communication", 4],
+"BECL504": ["Digital Communication Lab", 1],
+"BEC515x": ["Professional Elective Course", 3],
+"BEC586": ["Mini Project", 2]
 
 
 }
